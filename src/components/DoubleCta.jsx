@@ -2,10 +2,13 @@ import { motion } from 'motion/react'
 import Art from './Art'
 import Reveal from './Reveal'
 import Button from './Button'
+import applyImg from '../assets/cta-apply.png'
+import sponsorshipImg from '../assets/cta-sponsorship.png'
+
 
 const cards = [
-  { title: 'How to apply', text: 'Everything you need to secure your place, from first enquiry to move-in day.', tone: 'brick', cta: 'Start your application' },
-  { title: 'Scholarships', text: 'Merit, community and need-based awards to help make College life possible.', tone: 'gold', cta: 'See scholarships' },
+  { title: 'How to apply', text: 'Everything you need to secure your place, from first enquiry to move-in day.', tone: 'brick', cta: 'Start your application', image: applyImg },
+  { title: 'Scholarships', text: 'Merit, community and need-based awards to help make College life possible.', tone: 'gold', cta: 'See scholarships', image: sponsorshipImg },
 ]
 
 export default function DoubleCta() {
@@ -20,7 +23,7 @@ export default function DoubleCta() {
             <motion.article whileHover="hover" initial="rest" className="group relative overflow-hidden rounded-3xl bg-sand">
               <div className="relative aspect-[5/4] overflow-hidden">
                 <motion.div variants={{ rest: { scale: 1 }, hover: { scale: 1.08 } }} transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }} className="h-full w-full">
-                  <Art tone={c.tone} variant={i + 3} className="h-full w-full" />
+                  <img src={c.image} alt={c.title} className="h-full w-full object-cover" />
                 </motion.div>
               </div>
               <div className="flex flex-col gap-5 p-6 md:p-10">

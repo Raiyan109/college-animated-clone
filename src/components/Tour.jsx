@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react'
 import { gsap } from '../lib/gsap'
 import Art from './Art'
 import Button from './Button'
+import tourImg from '../assets/hero.jpg'
 
 // Image expands to full-bleed as the section scrolls into view.
 export default function Tour() {
@@ -23,7 +24,7 @@ export default function Tour() {
   return (
     <section ref={root} className="relative h-screen overflow-hidden bg-cream">
       <div className="tour-frame absolute inset-0">
-        <Art tone="moss" variant={4} className="tour-art h-full w-full" />
+        <img src={tourImg} alt="Virtual Tour" className="tour-art h-full w-full object-cover" />
         <div className="absolute inset-0 bg-ink/40" />
       </div>
       <div className="tour-copy absolute inset-0 flex flex-col items-center justify-center gap-6 px-5 text-center text-cream">
