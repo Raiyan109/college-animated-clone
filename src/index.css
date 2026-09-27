@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Tight Variable", "Inter Tight", system-ui, sans-serif;
+  --color-brick: #7a2e22;
+  --color-brick-dark: #4a1a13;
+  --color-cream: #f4efe6;
+  --color-sand: #e6dccb;
+  --color-ink: #1b1512;
+  --color-moss: #3b4a3a;
+  --color-gold: #c9a35b;
+}
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+html { background: var(--color-cream); }
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+::selection { background: var(--color-brick); color: var(--color-cream); }
+
+.split-line { overflow: hidden; }
+.underline-link { background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .5s cubic-bezier(.65,0,.35,1); }
+.underline-link:hover { background-size: 100% 1px; }
+
+@keyframes marquee { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+.marquee-track { animation: marquee 40s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+@keyframes drop { 0% { transform: translateY(-100%) } 100% { transform: translateY(300%) } }
