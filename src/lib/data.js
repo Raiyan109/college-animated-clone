@@ -1,3 +1,12 @@
+import life1 from '../assets/life-1.png'
+import life2 from '../assets/life-2.png'
+import life3 from '../assets/life-3.png'
+import life4 from '../assets/life-4.png'
+import life5 from '../assets/life-5.png'
+import life6 from '../assets/life-6.png'
+import life7 from '../assets/life-7.png'
+import life8 from '../assets/life-8.png'
+
 export const navLinks = [
   { label: 'About the College', sub: ['Our story', 'Leadership', 'Governance', 'Careers'] },
   { label: 'Student Life', sub: ['Rooms & dining', 'Sport & culture', 'Study support', 'Pastoral care'] },
@@ -11,14 +20,14 @@ export const navLinks = [
 export const marqueeWords = ['Community', 'Curiosity', 'Belonging', 'Leadership', 'Friendship', 'Resilience']
 
 export const lifeItems = [
-  { title: 'The Grounds', tone: 'moss', text: 'Lawns, courtyards and quiet corners for a breath between lectures.' },
-  { title: 'Dining Hall', tone: 'brick', text: 'Shared tables, seasonal menus and the best conversations of your day.' },
-  { title: 'Social Life', tone: 'gold', text: 'Formals, trivia nights and traditions that become your stories.' },
-  { title: 'Your Room', tone: 'sand', text: 'A comfortable space of your own, wired for study and rest.' },
-  { title: 'Common Rooms', tone: 'moss', text: 'Lounges, kitchens and games rooms where friendships are made.' },
-  { title: 'Study Spaces', tone: 'brick', text: 'Libraries, tutorial rooms and quiet nooks open late.' },
-  { title: 'Clubs & Teams', tone: 'gold', text: 'Sport, music, debating and service — join in or start something.' },
-  { title: 'The Chapel', tone: 'sand', text: 'A place for reflection, music and community gatherings.' },
+  { title: 'The Grounds', tone: 'moss', text: 'Lawns, courtyards and quiet corners for a breath between lectures.', image: life1 },
+  { title: 'Dining Hall', tone: 'brick', text: 'Shared tables, seasonal menus and the best conversations of your day.', image: life2 },
+  { title: 'Social Life', tone: 'gold', text: 'Formals, trivia nights and traditions that become your stories.', image: life3 },
+  { title: 'Your Room', tone: 'sand', text: 'A comfortable space of your own, wired for study and rest.', image: life4 },
+  { title: 'Common Rooms', tone: 'moss', text: 'Lounges, kitchens and games rooms where friendships are made.', image: life5 },
+  { title: 'Study Spaces', tone: 'brick', text: 'Libraries, tutorial rooms and quiet nooks open late.', image: life6 },
+  { title: 'Clubs & Teams', tone: 'gold', text: 'Sport, music, debating and service — join in or start something.', image: life7 },
+  { title: 'The Chapel', tone: 'sand', text: 'A place for reflection, music and community gatherings.', image: life8 },
 ]
 
 export const students = [

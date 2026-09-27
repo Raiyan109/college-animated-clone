@@ -44,7 +44,12 @@ export default function CollegeLife() {
         {lifeItems.map((item, i) => (
           <article key={item.title} className="group w-full shrink-0 md:w-[32vw] md:max-w-[560px]">
             <div className="relative aspect-[4/5] overflow-hidden md:aspect-[4/4.6]">
-              <Art tone={item.tone} variant={i} className="h-full w-full transition-transform duration-[1200ms] ease-out group-hover:scale-110" />
+              {/* <Art tone={item.tone} variant={i} className="h-full w-full transition-transform duration-[1200ms] ease-out group-hover:scale-110" /> */}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-110"
+              />
               <span className="absolute left-4 top-4 rounded-full bg-cream/90 px-3 py-1 text-xs text-ink">0{i + 1}</span>
             </div>
             <h3 className="mt-4 text-2xl font-medium tracking-tight">{item.title}</h3>
