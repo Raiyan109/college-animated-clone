@@ -19,7 +19,8 @@ export default function Stories() {
             <motion.a href="#top" whileHover="hover" initial="rest" className="group block">
               <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
                 <motion.div variants={{ rest: { scale: 1 }, hover: { scale: 1.08 } }} transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }} className="h-full w-full">
-                  <Art tone={s.tone} variant={i} className="h-full w-full" />
+                  {/* <Art tone={s.tone} variant={i} className="h-full w-full" /> */}
+                  <img src={s.image} alt={s.title} className="h-full w-full object-cover" />
                 </motion.div>
               </div>
               <p className="mt-4 text-xs uppercase tracking-widest text-brick">{s.tag}</p>

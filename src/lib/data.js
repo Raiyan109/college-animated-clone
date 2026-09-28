@@ -6,6 +6,13 @@ import life5 from '../assets/life-5.png'
 import life6 from '../assets/life-6.png'
 import life7 from '../assets/life-7.png'
 import life8 from '../assets/life-8.png'
+import student1 from '../assets/students-1.png'
+import student2 from '../assets/students-2.png'
+import student3 from '../assets/students-3.png'
+import story1 from '../assets/parallax potrait.png'
+import story2 from '../assets/life-4.png'
+import story3 from '../assets/life-6.png'
+import story4 from '../assets/life-8.png'
 
 export const navLinks = [
   { label: 'About the College', sub: ['Our story', 'Leadership', 'Governance', 'Careers'] },
@@ -31,22 +38,20 @@ export const lifeItems = [
 ]
 
 export const students = [
-  { name: 'Amelia', course: 'Medicine', tone: 'brick' },
-  { name: 'Kieran', course: 'Engineering', tone: 'moss' },
-  { name: 'Josephine', course: 'Law', tone: 'gold' },
-  { name: 'Sam', course: 'Commerce', tone: 'sand' },
-  { name: 'Georgia', course: 'Architecture', tone: 'brick' },
-  { name: 'Lachlan', course: 'Science', tone: 'moss' },
-  { name: 'Ellie', course: 'Arts', tone: 'gold' },
+  { name: 'Amelia', course: 'Medicine', tone: 'brick', image: student1 },
+  { name: 'Kieran', course: 'Engineering', tone: 'moss', image: student2 },
+  { name: 'Josephine', course: 'Law', tone: 'gold', image: student3 },
+  { name: 'Sam', course: 'Commerce', tone: 'sand', image: student1 },
+  { name: 'Georgia', course: 'Architecture', tone: 'brick', image: student2 }
 ]
 
 export const stories = [
-  { tag: 'Events', title: 'Parents’ Weekend returns to the courtyard', tone: 'brick' },
-  { tag: 'Sport', title: 'Taking her game to the world: a rowing journey', tone: 'moss' },
-  { tag: 'Sport', title: 'Basketball MVP on teamwork and late-night training', tone: 'gold' },
-  { tag: 'Community', title: 'Finding your people in first semester', tone: 'sand' },
-  { tag: 'Sport', title: 'On court and on campus: a student’s year', tone: 'brick' },
-  { tag: 'Sport', title: 'Celebrating a championship victory', tone: 'moss' },
-  { tag: 'Alumni', title: 'Bringing alumni together overseas', tone: 'gold' },
-  { tag: 'News', title: 'New Director of Programs joins the College', tone: 'sand' },
+  { tag: 'Events', title: 'Parents’ Weekend returns to the courtyard', tone: 'brick', image: story1 },
+  { tag: 'Sport', title: 'Taking her game to the world: a rowing journey', tone: 'moss', image: story2 },
+  { tag: 'Sport', title: 'Basketball MVP on teamwork and late-night training', tone: 'gold', image: story3 },
+  { tag: 'Community', title: 'Finding your people in first semester', tone: 'sand', image: story4 },
+  // { tag: 'Sport', title: 'On court and on campus: a student’s year', tone: 'brick', image: life2 },
+  // { tag: 'Sport', title: 'Celebrating a championship victory', tone: 'moss', image: life2 },
+  // { tag: 'Alumni', title: 'Bringing alumni together overseas', tone: 'gold' },
+  // { tag: 'News', title: 'New Director of Programs joins the College', tone: 'sand' },
 ]

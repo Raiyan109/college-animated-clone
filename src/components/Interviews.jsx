@@ -66,7 +66,8 @@ export default function Interviews() {
               className="group relative block w-[72vw] shrink-0 text-left sm:w-[38vw] md:w-[24vw] md:max-w-[420px]"
             >
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
-                <Art tone={s.tone} variant={i} className="h-full w-full transition-transform duration-[1200ms] group-hover:scale-110" />
+                {/* <Art tone={s.tone} variant={i} className="h-full w-full transition-transform duration-[1200ms] group-hover:scale-110" /> */}
+                <img src={s.image} alt={s.name} />
                 <span className="absolute inset-0 flex items-center justify-center">
                   <span className="flex h-16 w-16 items-center justify-center rounded-full bg-cream text-ink transition-transform duration-500 group-hover:scale-110">
                     {playing === i ? '❚❚' : '▶'}
